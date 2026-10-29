@@ -71,7 +71,11 @@ export default function Login({ setToken }: LoginProps) {
         )}
      
       </form>
-    </div>
+
+        <div className="actions">
+          <p>Don't have an account? <a href="/signup">Sign Up</a></p>
+        </div>
+      </div>
     </main>
   );
 }
