@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API_URL = "https://her-shield-backend.onrender.com/api";
+const API_URL = "https://her-shield-backend.onrender.com/api/auth";
 type SignupData = { name: string; email: string; password: string; phone?: string };
 type ProfileUpdate = {
   name?: string;
