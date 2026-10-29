@@ -18,21 +18,13 @@ function App() {
     setIsLoading(false);
   }, []);
 
-  const handleLogout = () => {
-    localStorage.removeItem("token");
-    setToken(null);
-  };
-
   if (isLoading) {
     return <div>Loading...</div>;
   }
 
   return (
     <Routes>
-      <Route
-      path="/"
-      element={<Login setToken={setToken} />}
-    />
+      <Route path="/" element={<Home />} />
       <Route path="/signup" element={<SignUp setToken={setToken} />} />
       <Route path="/login" element={<Login setToken={setToken} />} />
       <Route
