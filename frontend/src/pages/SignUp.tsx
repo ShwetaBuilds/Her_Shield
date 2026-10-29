@@ -35,7 +35,8 @@ export default function SignUp({ setToken }: { setToken: (token: string) => void
   };
 
   return (
-    <main className="app-shell form-shell">
+    <main className="app-shell ">
+      <div className="form-shell">
       <h1>Sign Up</h1>
       <form onSubmit={handleSubmit}>
         <label>
@@ -82,9 +83,17 @@ export default function SignUp({ setToken }: { setToken: (token: string) => void
           {isLoading ? "Creating account..." : "Create account"}
         </button>
         {message && (
-          <p className={`message ${message.includes("failed") ? "error" : "success"}`}>{message}</p>
+          <p className={`message ${message.includes("failed") ? "error" : "success"}`}>
+            {message}
+          </p>
         )}
       </form>
-    </main>
-  );
+
+      <div className="actions">
+        <p>Already have an account? <a href="/login">Log In</a></p>
+      </div>
+    </div>
+  </main>
+);
 }
+
