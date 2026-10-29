@@ -98,3 +98,155 @@ section ul {
   margin: 0.75rem 0 0;
   padding-left: 1.25rem;
 }
+/* Split Layout for Sign Up */
+.auth-page-container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #fce7f3 0%, #f3e8ff 50%, #fdf2f8 100%);
+  padding: 2rem 1rem;
+}
+
+.auth-split-card {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  max-width: 980px;
+  min-height: 580px;
+  background: #ffffff;
+  border-radius: 28px;
+  box-shadow: 0 20px 45px rgba(112, 26, 117, 0.08);
+  overflow: hidden;
+}
+
+.auth-banner-side {
+  flex: 1;
+  background: linear-gradient(180deg, #fae8ff 0%, #f5d0fe 100%);
+  padding: 3rem 2.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+}
+
+.badge-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(4px);
+  padding: 0.45rem 1rem;
+  border-radius: 9999px;
+  font-size: 0.82rem;
+  font-weight: 500;
+  color: #4b5563;
+  width: fit-content;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.03);
+}
+
+.badge-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background-color: #a855f7;
+}
+
+.banner-illustration {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1.5rem 0;
+}
+
+.shield-character-svg {
+  width: 190px;
+  height: 210px;
+  filter: drop-shadow(0 12px 20px rgba(147, 51, 234, 0.15));
+}
+
+.banner-title {
+  font-size: 1.65rem;
+  font-weight: 800;
+  color: #86198f;
+  margin: 0;
+}
+
+.auth-form-side {
+  flex: 1.15;
+  padding: 2.8rem 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: #ffffff;
+}
+
+.form-title {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: #111827;
+  margin: 0 0 0.35rem 0;
+}
+
+.form-subtitle {
+  font-size: 0.88rem;
+  color: #6b7280;
+  margin-bottom: 1.5rem;
+}
+
+.signup-grid-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.field-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.field-label {
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: #374151;
+}
+
+.field-group input,
+.field-group select {
+  width: 100%;
+  padding: 0.7rem 0.9rem;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  font-size: 0.9rem;
+  color: #1f2937;
+  background-color: #f9fafb;
+  box-sizing: border-box;
+}
+
+.two-col-row {
+  display: flex;
+  gap: 1rem;
+}
+
+.two-col-row .field-group {
+  flex: 1;
+}
+
+.submit-btn {
+  margin-top: 0.5rem;
+  width: 100%;
+  padding: 0.85rem;
+  background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%);
+  color: #ffffff;
+  font-weight: 600;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .auth-split-card {
+    flex-direction: column;
+  }
+}
