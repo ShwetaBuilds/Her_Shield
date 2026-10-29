@@ -37,7 +37,8 @@ export default function Login({ setToken }: LoginProps) {
   };
 
   return (
-    <main className="app-shell form-shell">
+    <main className="app-shell">
+      <div className="form-shell">
       <h1>Log In</h1>
       <form onSubmit={handleSubmit}>
         <label>
@@ -68,7 +69,9 @@ export default function Login({ setToken }: LoginProps) {
             {message}
           </p>
         )}
+     
       </form>
+    </div>
     </main>
   );
 }
