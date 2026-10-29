@@ -7,7 +7,7 @@ export default defineConfig({
     port: 4173,
     proxy: {
       "/api": {
-        target: "http://localhost:5000",
+        target: "https://her-shield-backend.onrender.com",
         changeOrigin: true,
       },
     },
